@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PPT</string>
+
+    <!-- DESCRIÇÕES DOS ÍCONES -->
+    <string name="desc_pedra">Ícone da pedra</string>
+    <string name="desc_papel">Ícone do papel</string>
+    <string name="desc_tesoura">Ícone da tesoura</string>
+    <string name="desc_com">Ícone do computador</string>
+
+    <!-- TEXTOS -->
+    <string name="txt_pedra">PEDRA</string>
+    <string name="txt_papel">PAPEL</string>
+    <string name="txt_tesoura">TESOURA</string>
+    <string name="txt_inicio">FAÇA SUA ESCOLHA!</string>
+    <string name="txt_escolha"></string>
+
+</resources>
