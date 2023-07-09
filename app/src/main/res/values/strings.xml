@@ -6,6 +6,7 @@
     <string name="desc_papel">Ícone do papel</string>
     <string name="desc_tesoura">Ícone da tesoura</string>
     <string name="desc_com">Ícone do computador</string>
+    <string name="desc_selec_com">Ícone da escolha do computador</string>
 
     <!-- TEXTOS -->
     <string name="txt_pedra">PEDRA</string>
