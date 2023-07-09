@@ -2,6 +2,7 @@ package com.example.ppt;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -69,32 +70,34 @@ public class MainActivity extends AppCompatActivity {
     ///////////*RESULTADOS*/////////////
 
     public void Resultado(int jogador, int computador){
+        TextView resultado = findViewById(R.id.resultado);
         if(jogador == computador){
-            TextView resultado = findViewById(R.id.resultado);
             resultado.setText("EMPATE!");
+            resultado.setTextColor(getResources().getColor(R.color.black));
         }else if(jogador == 1){
             if(computador == 2){
-                TextView resultado = findViewById(R.id.resultado);
                 resultado.setText("VOCÊ PERDEU.");
+                resultado.setTextColor(getResources().getColor(R.color.derrota));
             }else{
-                TextView resultado = findViewById(R.id.resultado);
                 resultado.setText("VOCÊ GANHOU!");
+                resultado.setTextColor(getResources().getColor(R.color.vitoria));
             }
         }else if(jogador == 2){
             if(computador == 3){
-                TextView resultado = findViewById(R.id.resultado);
                 resultado.setText("VOCÊ PERDEU.");
+                resultado.setTextColor(getResources().getColor(R.color.derrota));
             }else{
-                TextView resultado = findViewById(R.id.resultado);
                 resultado.setText("VOCÊ GANHOU!");
+                resultado.setTextColor(getResources().getColor(R.color.vitoria));
+
             }
         }else{
             if(computador == 1){
-                TextView resultado = findViewById(R.id.resultado);
                 resultado.setText("VOCÊ PERDEU.");
+                resultado.setTextColor(getResources().getColor(R.color.derrota));
             }else{
-                TextView resultado = findViewById(R.id.resultado);
                 resultado.setText("VOCÊ GANHOU!");
+                resultado.setTextColor(getResources().getColor(R.color.vitoria));
             }
         }
     }

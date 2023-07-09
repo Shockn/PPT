@@ -14,5 +14,8 @@
     <string name="txt_tesoura">TESOURA</string>
     <string name="txt_inicio">FAÇA SUA ESCOLHA!</string>
     <string name="txt_escolha"></string>
+    <string name="cont_vit">VITÓRIAS: 0</string>
+    <string name="cont_der">DERROTAS: 0</string>
+    <string name="cont_emp">EMPATES: 0</string>
 
 </resources>

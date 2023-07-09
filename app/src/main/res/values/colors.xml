@@ -3,5 +3,7 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="vitoria">#4DF527</color>
+    <color name="derrota">#F00</color>
 
 </resources>

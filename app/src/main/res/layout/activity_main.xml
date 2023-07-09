@@ -78,7 +78,7 @@
         app:layout_constraintTop_toTopOf="@+id/icone_papel" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/com"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -99,7 +99,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/com" />
 
     <TextView
         android:id="@+id/escolha"
@@ -119,7 +119,7 @@
         android:contentDescription="@string/desc_selec_com"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/com"
         app:srcCompat="@drawable/icone_selecao_computador" />
 
     <TextView
