@@ -24,36 +24,36 @@ public class MainActivity extends AppCompatActivity {
         TextView escolha = findViewById(R.id.escolha);
         escolha.setText("VOCÊ ESCOLHEU PEDRA");
         int r = selecaoComputador(view);
-        Resultado(1, r);
-        return 1;
+        Resultado(0, r);
+        return 0;
     }
 
     public int selecaoPapel(View view){
         TextView escolha = findViewById(R.id.escolha);
         escolha.setText("VOCÊ ESCOLHEU PAPEL");
         int r = selecaoComputador(view);
-        Resultado(2, r);
-        return 2;
+        Resultado(1, r);
+        return 1;
     }
 
     public int selecaoTesoura(View view){
         TextView escolha = findViewById(R.id.escolha);
         escolha.setText("VOCÊ ESCOLHEU TESOURA");
         int r = selecaoComputador(view);
-        Resultado(3, r);
-        return 3;
+        Resultado(2, r);
+        return 2;
     }
 
     ///////////*SELEÇÕES DO COMPUTADOR*/////////////
 
     public int selecaoComputador(View view){
         int i = new Random().nextInt(3);
-        if(i == 1){
+        if(i == 0){
             ImageView icon_selec_com = findViewById(R.id.icone_selec_com);
             icon_selec_com.setImageResource(R.drawable.com_pedra);
             TextView escolha = findViewById(R.id.escolha_com);
             escolha.setText("O COMPUTADOR ESCOLHEU PEDRA");
-        }else if(i == 2){
+        }else if(i == 1){
             ImageView icon_selec_com = findViewById(R.id.icone_selec_com);
             icon_selec_com.setImageResource(R.drawable.com_papel);
             TextView escolha = findViewById(R.id.escolha_com);
@@ -74,16 +74,16 @@ public class MainActivity extends AppCompatActivity {
         if(jogador == computador){
             resultado.setText("EMPATE!");
             resultado.setTextColor(getResources().getColor(R.color.black));
-        }else if(jogador == 1){
-            if(computador == 2){
+        }else if(jogador == 0){
+            if(computador == 1){
                 resultado.setText("VOCÊ PERDEU.");
                 resultado.setTextColor(getResources().getColor(R.color.derrota));
             }else{
                 resultado.setText("VOCÊ GANHOU!");
                 resultado.setTextColor(getResources().getColor(R.color.vitoria));
             }
-        }else if(jogador == 2){
-            if(computador == 3){
+        }else if(jogador == 1){
+            if(computador == 2){
                 resultado.setText("VOCÊ PERDEU.");
                 resultado.setTextColor(getResources().getColor(R.color.derrota));
             }else{
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }else{
-            if(computador == 1){
+            if(computador == 0){
                 resultado.setText("VOCÊ PERDEU.");
                 resultado.setTextColor(getResources().getColor(R.color.derrota));
             }else{
